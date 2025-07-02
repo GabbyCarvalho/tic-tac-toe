@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #212529;
+    --border-color:  #008080;
+    --font-color: #f1f5f9;
+    --primary-color: #00CED1;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Ubuntu" , sans-serif;
+    
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 0 1.5rem .5rem;
+    position: relative;
+    
+
+}
+header {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#addPlayers {
+    text-align: center;
+    padding: .5rem 1.5rem;
+    
+}
+
+.players {
+    margin-top: 10rem;
+    margin: .5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: .55rem;
+    transition: .15s;
+}
+
+
+#board {
+    display: grid;
+    grid-template-columns: .15fr .15fr .15fr;
+    gap: .5rem;
+    list-style: none;
+    padding: 1rem;
+  
+    
+    
+   
+}
+
+
+li {
+    background-color: var(--primary-color);
+    border-color: var(--border-color);
+    width: 180px;
+    height: 150px;
+    border-radius: 5px;
+    margin: .5rem .5rem ;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+
+    
+}
+
+#board li:hover {
+    filter: brightness(0.8);
+
+}
+#turns {
+    margin-bottom: 1rem;
+}
+
+#restartBtn {
+    margin-top: 10rem;
+    margin: .5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: .55rem;
+    transition: .15s;
+    text-align: center;
+}
+
+
+#o , #x {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    transform: translateX(40%);
+    margin-top: 1rem;
+    margin-left: 3rems;
+    display: none;
+ 
+}
+
+.disabled {
+    opacity: 0.5;
+    /* cursor: not-allowed; */
+}
+
+#score {
+    color: var(--font-color);
+    display: inline-block;
+    text-align: center;
+   
+
+}
+
+#scoreTable {
+    display: inline-block;
+    color: var(--bg-color);
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    width: 100%; 
+    border: 1px solid var(--primary-color);
+    border-radius: .5rem;
+   
+
+}
+#namePlayer1Board , #namePlayer2Board {
+    margin: 1rem;
+    color: var(--bg-color);
+    width: 10rem;
+    height: 100%;
+    
+}
+
+#scorePlayer1, #scorePlayer1 {
+    display: inline-block;
+    color: var(--bg-color);
+    width: 10rem;
+
+}
+
+#scoreTittle {
+    text-align: left;
+    margin-bottom: .25rem;
+}
+
+th, td {
+    border: 2px solid black; /* Adiciona bordas nas células */
+    padding: 8px;
+    text-align: center;
+    border-radius: .5rem;
+    color: var(--bg-color);
+}
