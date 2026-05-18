@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <main data-theme="dark">
+        <header class="flex align-center justify-between">
+            <h1>Tic-tac-toe</h1>
+        
+        
+        </header>
+        <div id="addPlayers">
+            <h2>Are you ready to play?</h2><br>
+            <p>Let's get this game started...</p><br>
+            <button class="players" id="namePlayer1">Add Player 1</button>
+            <button class="players" id="namePlayer2">Add Player 2</button>
+        </div>
+        <div id="game">
+            <ul id="board">
+                <li class="disabled" data-value="a1" id="a1"><img src="./img/0.png" id="o" data-image-o="o"><img src="./img/x.png"  id="x" data-image-x="x"></li>
+                <li class="disabled" data-value="a2" id="a2"><img src="./img/0.png" id="o" data-image-o="o"><img src="./img/x.png" id="x" data-image-x="x"></li>
+                <li class="disabled" data-value="a3" id="a3"><img src="./img/0.png" id="o" data-image-o="o"><img src="./img/x.png" id="x" data-image-x="x"></li>
+                <li class="disabled" data-value="b1" id="b1"><img src="./img/0.png" id="o" data-image-o="o"><img src="./img/x.png" id="x" data-image-x="x"></li>
+                <li class="disabled" data-value="b2" id="b2"><img src="./img/0.png" id="o" data-image-o="o"><img src="./img/x.png" id="x" data-image-x="x"></li>
+                <li class="disabled" data-value="b3" id="b3"><img src="./img/0.png" id="o" data-image-o="o"><img src="./img/x.png" id="x" data-image-x="x"></li>
+                <li class="disabled" data-value="c1" id="c1"><img src="./img/0.png" id="o" data-image-o="o"><img src="./img/x.png" id="x" data-image-o="x"></li>
+                <li class="disabled" data-value="c2" id="c2"><img src="./img/0.png" id="o" data-image-o="o"><img src="./img/x.png" id="x" data-image-o="x"></li>
+                <li class="disabled" data-value="c3" id="c3"><img src="./img/0.png" id="o" data-image-o="o"><img src="./img/x.png" id="x" data-image-o="x"></li>
+            </ul>
+        </div>
+        <div id="turns">
+            <span>
+            <h3>Turn:</h3>
+
+            <h3 id="nameTurn"></h3>
+            </span>
+        </div>
+
+
+        <div id="score">
+            <h3 id="scoreTittle">Scoreboard</h3>
+        
+            <table   id="scoreTable">
+                    <tr>
+                        <th id="namePlayer1Board"></th>
+                        <th id="namePlayer2Board"></th>
+                    </tr>
+                    <tr>
+                     <td id="scorePlayer1"></td>
+                    <td id="scorePlayer2"></td>
+                </tr>
+               
+            </table>
+
+        </div>
+        <br><br><br>
+        <div>
+            <button onclick="restart()" id="restartBtn">Restart Game</button>
+        </div>
+        
+        
+    </main>
+</body>
+</html>
